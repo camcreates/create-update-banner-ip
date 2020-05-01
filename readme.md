@@ -17,9 +17,6 @@ Since Squarspace does not have a central image repository to upload images to, w
 4. Upload the desired image. Make sure it has been [optimized](https://github.com/camcreates/imageoptim-use/blob/master/imageoptim-process.md), first, if necessary.
 5. Click **Apply** to add the image and click **Save** to finish creating the content block.
 6. Right click the image and select **Copy Image Address**. Paste this someplace you can refer back to it later.
-7. Since we do not actually need the image on a page like this, click **Edit** again to go back into the content block.
-8. Hover over the image and click **Delete** when the option appears. Click **Yes** to confirm. This will remove the image from the page but it will remain in the system.
-9. Click **Save**.
 
 ![Process for adding a source image][add-img]
 
