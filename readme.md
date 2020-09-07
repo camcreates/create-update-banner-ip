@@ -9,7 +9,7 @@ This section will walk through the process of initally implementing a banner.
 
 ### Add image
 
-Since Squarspace does not have a central image repository to upload images to, we will need to add the image to a content block and then grab the generated URL to use for the banner.
+Since Squarespace does not have a central image repository to upload images to, we will need to add the image to a content block and then grab the generated URL to use for the banner.
 
 1. While logged in, click **Pages**, and scroll down until you find the **Test Page**. Click it to edit.
 2. Hover your mouse over the empty section of the page to trigger the **Page Content** bar and click **Edit**.
@@ -69,6 +69,7 @@ Since Squarspace does not have a central image repository to upload images to, w
             link.href = 'https://www.submittable.com/work-from-home/?utm_campaign=grants&utm_medium=ppc&utm_source=insidephilanthropy&utm_type=display&utm_content=bannerad&utm_adgrp=april';
             img.src = 'https://static1.squarespace.com/static/57d9e959d482e972e8434364/t/5ea122363b46f95d976a0bb1/1587618359108/sbmtbl.png';
             img.classList.add('submittable-ad');
+            img.setAttribute('alt', 'Insert alt text here.');
             link.appendChild(img);
             container.insertBefore(link, container.firstChild);
         });
@@ -94,8 +95,14 @@ This section will walk through the process of updating or replacing an already i
 
 ### Update Ad Link
 
-1. On the same page, find the line that begins with **link.href**.
+1. On the same page, find the line that begins with **img.setAttribute**.
 2. Replace the link after the **=** symbol with the new ad URL. Be sure not to remove the single quotation marks that go around the URL.
+3. If you do not need to update the alt link, click **Save** to complete the process, otherwise continue to the next set of steps.
+
+### Update Alt Text
+
+1. On the same page, find the line that begins with **link.href**.
+2. Replace the text in the single quotes after **'alt'** with alt text appropriate for the current image.
 3. Click **Save** when done.
 
 ![Process for updating banner links][update-links]
